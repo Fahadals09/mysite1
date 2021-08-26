@@ -6,7 +6,7 @@ class Post(models.Model) :
     title = models.CharField(max_length=100)
     name =  models.CharField(max_length=100)
     image = models.ImageField(upload_to='posts/')
-    description = models.TextField(max_length=2000)
+    description = models.TextField(max_length=20000)
  
 
     def __str__(self):
